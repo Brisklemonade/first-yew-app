@@ -1,0 +1,7 @@
+[build]
+# The index HTML file to drive the bundling process.
+target = "root.html"
+
+[serve]
+# Open a browser tab once the initial build is complete.
+open = true

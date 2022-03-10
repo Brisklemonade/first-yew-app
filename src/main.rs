@@ -27,15 +27,18 @@ impl Component for CounterComponent {
 
     fn view(&self, ctx: &Context<Self>) -> Html {
         let link: &Scope<CounterComponent> = ctx.link();
-        html! {
-            <div class="container">
-                <p>{self.count}</p>
-                <button onclick={link.callback(|_| Msg::AddOne)}>{"+1"}</button>
-            </div>
-        }
+        html! (
+            <>
+                <div class="container">
+                    <h1 class="title">{"Welcome to a Rust made web app"}</h1>
+                    <p>{self.count}</p>
+                    <button onclick={link.callback(|_| Msg::AddOne)}>{"+1"}</button>
+                </div>
+            </>
+        )
     }
 }
 
 fn main() {
-    yew::start_app::<CounterComponent>();
+    yew::start_app::<CounterComponent>(); 
 }

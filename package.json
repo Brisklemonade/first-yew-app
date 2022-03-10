@@ -1,0 +1,26 @@
+{
+  "name": "yew-app",
+  "version": "1.0.0",
+  "description": "To Do",
+  "main": "postcss.config.js",
+  "devDependencies": {
+    "cssnano": "^5.1.2",
+    "postcss": "^8.4.8",
+    "postcss-cli": "^9.1.0"
+  },
+  "scripts": {
+    "dev": "trunk serve",
+    "build": "trunk build --release && node ./scripts/minifycss.js && minify-all-js dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brisklemonade/first-yew-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brisklemonade/first-yew-app/issues"
+  },
+  "homepage": "https://github.com/Brisklemonade/first-yew-app#readme"
+}
