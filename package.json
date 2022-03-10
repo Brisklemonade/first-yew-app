@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "trunk serve",
-    "build": "trunk build --release && node ./scripts/minifycss.js"
+    "build": "trunk build --release && node ./scripts/minifycss.js && minify-all-js dist"
   },
   "repository": {
     "type": "git",
